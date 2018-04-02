@@ -1,0 +1,26 @@
+/* 
+  PullTableViewLan.strings
+  HSIMApp
+
+  Created by apple on 14-3-20.
+  Copyright (c) 2014年 han. All rights reserved.
+*/
+
+
+"Updated %ld minute ago"    = "上次刷新 %ld分钟前";
+"Updated %ld minutes ago"   = "上次刷新 %ld分钟前";
+"Updated %ld hour ago"      = "上次刷新 %ld小时前";
+"Updated %ld hours ago"     = "上次刷新 %ld小时前";
+"Updated %ld day ago"       = "上次刷新 %ld天前";
+"Updated %ld days ago"      = "上次刷新 %ld天前";
+
+"Release to refresh..."     = "松开刷新...";
+"Pull down to refresh..."   = "下拉刷新...";
+"Refreshing..."             = "正在刷新...";
+
+"Pull down to load more"    = "下拉加载更多";
+"Release to load more..."   = "松开加载更多...";
+"Pull down to load more..." = "下拉加载更多...";
+"Loading..."                = "正在加载...";
+
+"Pull up to load more..."   = "上拉加载更多";

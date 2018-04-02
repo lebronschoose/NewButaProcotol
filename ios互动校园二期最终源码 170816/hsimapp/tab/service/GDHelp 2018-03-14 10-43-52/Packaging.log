@@ -1,0 +1,215 @@
+2018-03-14 02:43:44 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fb993eaa330; archive(resolved)='<IDEArchive: 0x7fb993bc24d0>', distributionTask(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team(resolved)='<IDEProvisioningBasicTeam 0x7fb9a35b8ce0: teamID: 3Q5733V78P, teamName: Li Tuanhui>'>
+	Chain (11, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fb993eaa330; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team='<IDEProvisioningBasicTeam 0x7fb9a35b8ce0: teamID: 3Q5733V78P, teamName: Li Tuanhui>'>
+	<IDEDistributionProcessingPipelineContext: 0x7fb99403a950; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team='<IDEProvisioningBasicTeam 0x7fb9a35b8ce0: teamID: 3Q5733V78P, teamName: Li Tuanhui>'>
+	<IDEDistributionContext: 0x7fb993ef46b0; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team='<IDEProvisioningBasicTeam 0x7fb9a35b8ce0: teamID: 3Q5733V78P, teamName: Li Tuanhui>'>
+	<IDEDistributionContext: 0x7fb9939ea3c0; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team='<IDEProvisioningBasicTeam 0x7fb9a35b8ce0: teamID: 3Q5733V78P, teamName: Li Tuanhui>'>
+	<IDEDistributionContext: 0x7fb993da2850; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team='<IDEProvisioningBasicTeam 0x7fb9a35b8ce0: teamID: 3Q5733V78P, teamName: Li Tuanhui>'>
+	<IDEDistributionContext: 0x7fb9ab8cadf0; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team='<IDEProvisioningBasicTeam 0x7fb9a35b8ce0: teamID: 3Q5733V78P, teamName: Li Tuanhui>'>
+	<IDEDistributionContext: 0x7fb98f3fa460; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team='<IDEProvisioningBasicTeam 0x7fb9a35b8ce0: teamID: 3Q5733V78P, teamName: Li Tuanhui>'>
+	<IDEDistributionContext: 0x7fb993cc96b0; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team='<IDEProvisioningBasicTeam 0x7fb9a35b8ce0: teamID: 3Q5733V78P, teamName: Li Tuanhui>'>
+	<IDEDistributionContext: 0x7fb993cb4810; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team='<IDEProvisioningBasicTeam 0x7fb9a35b8ce0: teamID: 3Q5733V78P, teamName: Li Tuanhui>'>
+	<IDEDistributionContext: 0x7fb993c6a270; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fb993e203d0>', team='(null)'>
+	<IDEDistributionContext: 0x7fb9a49cab10; archive = '<IDEArchive: 0x7fb993bc24d0>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fb993eaa330>
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionCreateDestRootStep
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionCopyItemStep
+2018-03-14 02:43:44 +0000  Running /usr/bin/ditto '-V' '/Users/dingding/Library/Developer/Xcode/Archives/2018-03-14/GDHelp 2018-3-14 上午10.43.xcarchive/Products/Applications/GDHelp.app' '/var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/Root/Payload/GDHelp.app'
+2018-03-14 02:43:44 +0000  >>> Copying /Users/dingding/Library/Developer/Xcode/Archives/2018-03-14/GDHelp 2018-3-14 上午10.43.xcarchive/Products/Applications/GDHelp.app 
+copying file ./_CodeSignature/CodeResources ... 
+10473 bytes for ./_CodeSignature/CodeResources
+copying file ./MainHelpViewController.nib ... 
+7735 bytes for ./MainHelpViewController.nib
+copying file ./AppIcon20x20@2x.png ... 
+1076 bytes for ./AppIcon20x20@2x.png
+copying file ./AppIcon20x20@3x.png ... 
+1840 bytes for ./AppIcon20x20@3x.png
+copying file ./AppIcon60x60@2x.png ... 
+5098 bytes for ./AppIcon60x60@2x.png
+copying file ./AppIcon29x29@2x.png ... 
+1732 bytes for ./AppIcon29x29@2x.png
+copying file ./AppIcon40x40@3x.png ... 
+2018-03-14 02:43:44 +0000  5098 bytes for ./AppIcon40x40@3x.png
+copying file ./AppIcon40x40@2x.png ... 
+2796 bytes for ./AppIcon40x40@2x.png
+copying file ./AppIcon29x29@3x.png ... 
+2018-03-14 02:43:44 +0000  3148 bytes for ./AppIcon29x29@3x.png
+2018-03-14 02:43:44 +0000  copying file ./AppIcon60x60@3x.png ... 
+2018-03-14 02:43:44 +0000  9726 bytes for ./AppIcon60x60@3x.png
+2018-03-14 02:43:44 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2018-03-14 02:43:44 +0000  916 bytes for ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+1791 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+258 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2018-03-14 02:43:44 +0000  1790 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2018-03-14 02:43:44 +0000  832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./JGProgressHUD Resources.bundle/jg_hud_error@3x.png ... 
+2018-03-14 02:43:44 +0000  6123 bytes for ./JGProgressHUD Resources.bundle/jg_hud_error@3x.png
+copying file ./JGProgressHUD Resources.bundle/jg_hud_error@2x.png ... 
+2018-03-14 02:43:44 +0000  5332 bytes for ./JGProgressHUD Resources.bundle/jg_hud_error@2x.png
+copying file ./JGProgressHUD Resources.bundle/jg_hud_success.png ... 
+2527 bytes for ./JGProgressHUD Resources.bundle/jg_hud_success.png
+copying file ./JGProgressHUD Resources.bundle/jg_hud_success@3x.png ... 
+2018-03-14 02:43:44 +0000  6299 bytes for ./JGProgressHUD Resources.bundle/jg_hud_success@3x.png
+copying file ./JGProgressHUD Resources.bundle/jg_hud_success@2x.png ... 
+2018-03-14 02:43:44 +0000  5346 bytes for ./JGProgressHUD Resources.bundle/jg_hud_success@2x.png
+copying file ./JGProgressHUD Resources.bundle/jg_hud_error.png ... 
+2018-03-14 02:43:44 +0000  2620 bytes for ./JGProgressHUD Resources.bundle/jg_hud_error.png
+copying file ./Assets.car ... 
+2018-03-14 02:43:44 +0000  308680 bytes for ./Assets.car
+copying file ./RightNavi.png ... 
+2018-03-14 02:43:44 +0000  4440 bytes for ./RightNavi.png
+copying file ./LeftNavi.png ... 
+2018-03-14 02:43:44 +0000  5629 bytes for ./LeftNavi.png
+copying file ./embedded.mobileprovision ... 
+2018-03-14 02:43:44 +0000  8361 bytes for ./embedded.mobileprovision
+copying file ./GDHelp ... 
+2018-03-14 02:43:44 +0000  3634688 bytes for ./GDHelp
+copying file ./Info.plist ... 
+2018-03-14 02:43:44 +0000  2018-03-14 02:43:44 +0000  /usr/bin/ditto exited with 0
+2018-03-14 02:43:44 +0000  1091 bytes for ./Info.plist
+copying file ./PkgInfo ... 
+8 bytes for ./PkgInfo
+
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionEmbedProfileStep
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionItemRemovalStep
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2018-03-14 02:43:44 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2018-03-14 02:43:44 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2018-03-14 02:43:44 +0000  Running /usr/bin/ditto '-V' '/Users/dingding/Library/Developer/Xcode/Archives/2018-03-14/GDHelp 2018-3-14 上午10.43.xcarchive/BCSymbolMaps/DA39DEA3-57B9-3486-8AA6-3A63E338BE2E.bcsymbolmap' '/var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/Root/BCSymbolMaps/DA39DEA3-57B9-3486-8AA6-3A63E338BE2E.bcsymbolmap'
+2018-03-14 02:43:44 +0000  >>> Copying /Users/dingding/Library/Developer/Xcode/Archives/2018-03-14/GDHelp 2018-3-14 上午10.43.xcarchive/BCSymbolMaps/DA39DEA3-57B9-3486-8AA6-3A63E338BE2E.bcsymbolmap 
+2018-03-14 02:43:44 +0000  copying file ./DA39DEA3-57B9-3486-8AA6-3A63E338BE2E.bcsymbolmap ... 
+2018-03-14 02:43:44 +0000  117424 bytes for ./DA39DEA3-57B9-3486-8AA6-3A63E338BE2E.bcsymbolmap
+2018-03-14 02:43:44 +0000  
+2018-03-14 02:43:44 +0000  2018-03-14 02:43:44 +0000  /usr/bin/ditto exited with 0
+
+2018-03-14 02:43:44 +0000  2018-03-14 02:43:44 +0000  
+
+2018-03-14 02:43:44 +0000  Running /usr/bin/ditto '-V' '/Users/dingding/Library/Developer/Xcode/Archives/2018-03-14/GDHelp 2018-3-14 上午10.43.xcarchive/BCSymbolMaps/80BE4FDA-2342-31BD-A295-6B07F7707D0E.bcsymbolmap' '/var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/Root/BCSymbolMaps/80BE4FDA-2342-31BD-A295-6B07F7707D0E.bcsymbolmap'
+2018-03-14 02:43:44 +0000  >>> Copying /Users/dingding/Library/Developer/Xcode/Archives/2018-03-14/GDHelp 2018-3-14 上午10.43.xcarchive/BCSymbolMaps/80BE4FDA-2342-31BD-A295-6B07F7707D0E.bcsymbolmap 
+2018-03-14 02:43:44 +0000  copying file ./80BE4FDA-2342-31BD-A295-6B07F7707D0E.bcsymbolmap ... 
+2018-03-14 02:43:44 +0000  114357 bytes for ./80BE4FDA-2342-31BD-A295-6B07F7707D0E.bcsymbolmap
+2018-03-14 02:43:44 +0000  
+2018-03-14 02:43:44 +0000  2018-03-14 02:43:44 +0000  /usr/bin/ditto exited with 0
+2018-03-14 02:43:44 +0000  
+
+2018-03-14 02:43:44 +0000  
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionSymbolsStep
+2018-03-14 02:43:44 +0000  Excluding symbols for GDHelp.app
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionAppThinningStep
+2018-03-14 02:43:44 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionODRStep
+2018-03-14 02:43:44 +0000  Processing step: IDEDistributionStripXattrsStep
+2018-03-14 02:43:44 +0000  Running /usr/bin/xattr '-crs' '/var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/Root/Payload/GDHelp.app'
+2018-03-14 02:43:44 +0000  2018-03-14 02:43:44 +0000  
+
+2018-03-14 02:43:44 +0000  /usr/bin/xattr exited with 02018-03-14 02:43:44 +0000  
+
+2018-03-14 02:43:44 +0000  2018-03-14 02:43:44 +0000  Processing step: IDEDistributionCodesignStep
+
+2018-03-14 02:43:44 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb9a3597ff0 'GDDZ.GDHelp' '<DVTFilePath:0x7fb993b71170:'/Users/dingding/Library/Developer/Xcode/Archives/2018-03-14/GDHelp 2018-3-14 上午10.43.xcarchive/Products/Applications/GDHelp.app'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb9a3728a00>: {
+}
+2018-03-14 02:43:44 +0000  Entitlements for <IDEDistributionItem: 0x7fb9a3597ff0 'GDDZ.GDHelp' '<DVTFilePath:0x7fb993b71170:'/Users/dingding/Library/Developer/Xcode/Archives/2018-03-14/GDHelp 2018-3-14 上午10.43.xcarchive/Products/Applications/GDHelp.app'>'>: {
+    "application-identifier" = "3Q5733V78P.GDDZ.GDHelp";
+    "beta-reports-active" = 1;
+    "com.apple.developer.networking.HotspotConfiguration" = 1;
+    "com.apple.developer.team-identifier" = 3Q5733V78P;
+    "get-task-allow" = 0;
+}
+2018-03-14 02:43:44 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb9a3597ff0 'GDDZ.GDHelp' '<DVTFilePath:0x7fb993b71170:'/Users/dingding/Library/Developer/Xcode/Archives/2018-03-14/GDHelp 2018-3-14 上午10.43.xcarchive/Products/Applications/GDHelp.app'>'> to: /var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/entitlementspbjlnp
+2018-03-14 02:43:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '25DEA85953B1B814B47BA0EEABC439FDACE0C6F1' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/entitlementspbjlnp' '/var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/Root/Payload/GDHelp.app'
+2018-03-14 02:43:45 +0000  /var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/Root/Payload/GDHelp.app: signed app bundle with Mach-O universal (armv7 arm64) [GDDZ.GDHelp]
+2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  /usr/bin/codesign exited with 0
+
+2018-03-14 02:43:45 +0000  
+2018-03-14 02:43:45 +0000  Processing step: IDEDistributionStreamingZipItemStep
+2018-03-14 02:43:45 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-03-14 02:43:45 +0000  Processing step: IDEDistributionCreateIPAStep
+2018-03-14 02:43:45 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/Root' '/var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/Packages/GDHelp.ipa'
+2018-03-14 02:43:45 +0000  >>> Copying /var/folders/p6/lb5nyc194qqby9kgvbtxgpc80000gn/T/XcodeDistPipeline.lvS/Root 
+2018-03-14 02:43:45 +0000  copying file ./BCSymbolMaps/DA39DEA3-57B9-3486-8AA6-3A63E338BE2E.bcsymbolmap ... 
+2018-03-14 02:43:45 +0000  117424 bytes for ./BCSymbolMaps/DA39DEA3-57B9-3486-8AA6-3A63E338BE2E.bcsymbolmap
+2018-03-14 02:43:45 +0000  copying file ./BCSymbolMaps/80BE4FDA-2342-31BD-A295-6B07F7707D0E.bcsymbolmap ... 
+2018-03-14 02:43:45 +0000  114357 bytes for ./BCSymbolMaps/80BE4FDA-2342-31BD-A295-6B07F7707D0E.bcsymbolmap
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/_CodeSignature/CodeResources ... 
+2018-03-14 02:43:45 +0000  10473 bytes for ./Payload/GDHelp.app/_CodeSignature/CodeResources
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/MainHelpViewController.nib ... 
+7735 bytes for ./Payload/GDHelp.app/MainHelpViewController.nib
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/AppIcon20x20@2x.png ... 
+2018-03-14 02:43:45 +0000  1076 bytes for ./Payload/GDHelp.app/AppIcon20x20@2x.png
+copying file ./Payload/GDHelp.app/AppIcon20x20@3x.png ... 
+2018-03-14 02:43:45 +0000  1840 bytes for ./Payload/GDHelp.app/AppIcon20x20@3x.png
+copying file ./Payload/GDHelp.app/AppIcon60x60@2x.png ... 
+2018-03-14 02:43:45 +0000  5098 bytes for ./Payload/GDHelp.app/AppIcon60x60@2x.png
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/AppIcon29x29@2x.png ... 
+2018-03-14 02:43:45 +0000  1732 bytes for ./Payload/GDHelp.app/AppIcon29x29@2x.png
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/AppIcon40x40@3x.png ... 
+2018-03-14 02:43:45 +0000  5098 bytes for ./Payload/GDHelp.app/AppIcon40x40@3x.png
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/AppIcon40x40@2x.png ... 
+2796 bytes for ./Payload/GDHelp.app/AppIcon40x40@2x.png
+copying file ./Payload/GDHelp.app/AppIcon29x29@3x.png ... 
+2018-03-14 02:43:45 +0000  3148 bytes for ./Payload/GDHelp.app/AppIcon29x29@3x.png
+copying file ./Payload/GDHelp.app/AppIcon60x60@3x.png ... 
+2018-03-14 02:43:45 +0000  9726 bytes for ./Payload/GDHelp.app/AppIcon60x60@3x.png
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+916 bytes for ./Payload/GDHelp.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+1791 bytes for ./Payload/GDHelp.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+copying file ./Payload/GDHelp.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2018-03-14 02:43:45 +0000  258 bytes for ./Payload/GDHelp.app/Base.lproj/Main.storyboardc/Info.plist
+copying file ./Payload/GDHelp.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2018-03-14 02:43:45 +0000  1790 bytes for ./Payload/GDHelp.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Payload/GDHelp.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2018-03-14 02:43:45 +0000  832 bytes for ./Payload/GDHelp.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Payload/GDHelp.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+258 bytes for ./Payload/GDHelp.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_error@3x.png ... 
+2018-03-14 02:43:45 +0000  6123 bytes for ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_error@3x.png
+copying file ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_error@2x.png ... 
+2018-03-14 02:43:45 +0000  5332 bytes for ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_error@2x.png
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_success.png ... 
+2018-03-14 02:43:45 +0000  2527 bytes for ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_success.png
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_success@3x.png ... 
+2018-03-14 02:43:45 +0000  6299 bytes for ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_success@3x.png
+copying file ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_success@2x.png ... 
+2018-03-14 02:43:45 +0000  5346 bytes for ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_success@2x.png
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_error.png ... 
+2018-03-14 02:43:45 +0000  2620 bytes for ./Payload/GDHelp.app/JGProgressHUD Resources.bundle/jg_hud_error.png
+copying file ./Payload/GDHelp.app/Assets.car ... 
+2018-03-14 02:43:45 +0000  308680 bytes for ./Payload/GDHelp.app/Assets.car
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/RightNavi.png ... 
+4440 bytes for ./Payload/GDHelp.app/RightNavi.png
+copying file ./Payload/GDHelp.app/LeftNavi.png ... 
+2018-03-14 02:43:45 +0000  5629 bytes for ./Payload/GDHelp.app/LeftNavi.png
+copying file ./Payload/GDHelp.app/embedded.mobileprovision ... 
+2018-03-14 02:43:45 +0000  9577 bytes for ./Payload/GDHelp.app/embedded.mobileprovision
+2018-03-14 02:43:45 +0000  copying file ./Payload/GDHelp.app/GDHelp ... 
+2018-03-14 02:43:45 +0000  2918784 bytes for ./Payload/GDHelp.app/GDHelp
+copying file ./Payload/GDHelp.app/Info.plist ... 
+2018-03-14 02:43:45 +0000  1091 bytes for ./Payload/GDHelp.app/Info.plist
+copying file ./Payload/GDHelp.app/PkgInfo ... 
+8 bytes for ./Payload/GDHelp.app/PkgInfo
+2018-03-14 02:43:45 +0000  2018-03-14 02:43:45 +0000  /usr/bin/ditto exited with 0
+2018-03-14 02:43:45 +0000  
+
+2018-03-14 02:43:45 +0000  Processing step: IDEDistributionCreateManifestStep
+2018-03-14 02:43:45 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so

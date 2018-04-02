@@ -1,0 +1,219 @@
+//
+//  hsimapp.pch
+//  hsimapp
+//
+//  Created by apple on 16/6/26.
+//  Copyright © 2016年 dayihua .inc. All rights reserved.
+//
+// http://www.butaschool.com/app/download/butaschool.apk
+#ifndef hsimapp_pch
+#define hsimapp_pch
+
+#define byte                    Byte
+#define WORD                    unsigned short
+#define DWORD                   unsigned long
+
+#define En2CHN                  CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000)
+
+#define ReturnNAVI  UITapGestureRecognizer *tapSingle = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(returnAction)];\
+UIView *leftView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 30)];\
+[leftView addGestureRecognizer:tapSingle];\
+UIImageView *lImageView = [[UIImageView alloc]initWithFrame:CGRectMake(-13, 0, 30, 30)];\
+lImageView.image = [UIImage imageNamed:@"LeftReturnNavi.png"];\
+[leftView addSubview:lImageView];\
+UILabel *leftLabel = [[UILabel alloc]initWithFrame:CGRectMake(lImageView.frame.origin.x+lImageView.frame.size.width-5, 5, 40, 20)];\
+leftLabel.text = @"返回";\
+leftLabel.font = [UIFont systemFontOfSize:15];\
+leftLabel.textColor = [UIColor whiteColor];\
+[leftView addSubview:leftLabel];\
+UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:leftView];\
+self.navigationItem.backBarButtonItem = leftItem;\
+
+/**
+ *  Frame PX  ---> Pt 6的宽度 全部向下取整数
+ */
+#define MHPxConvertPt(__Px) floor((__Px) * ScreenWidth/375.0f)
+
+// IOS版本
+#define MHIOSVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+// 颜色+透明度
+#define MHAlphaColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+// 字符串为空
+#define MHStringIsEmpty(__string) ((__string.length == 0) || MHObjectIsNil(__string))
+
+// 字符串不为空
+#define MHStringIsNotEmpty(__string)  (!MHStringIsEmpty(__string))
+
+// 是否为空对象
+#define MHObjectIsNil(__object)  ((nil == __object) || [__object isKindOfClass:[NSNull class]])
+
+/**
+ *  屏幕的物理高度
+ */
+#define ScreenHeight   [UIScreen mainScreen].bounds.size.height
+
+/**
+ *  屏幕的物理宽度
+ */
+#define ScreenWidth    [UIScreen mainScreen].bounds.size.width
+#define iOS1                 1
+#define APP_VER             100
+
+#define isIOS8              ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0)
+#define isIOS7              ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 7.0)
+
+#define TIMEOUT             8.0
+
+#define Waiting(x,t)            [self startWaiting:x forTag:t]
+#define StopWaiting             [self stopWaiting]
+
+#define         CALENDER_VIEW_HEIGHT    120.0
+
+#define MAIN_ENTRY              @"http://www.butaschool.com/cfg/gate.html"
+#define URL_LEGAL               @"legal.html"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define msgLoginStatus          @"msgLoginStatus"
+#define msgLoginIMStatus        @"msgLoginIMStatus"
+#define msgUpdageSegBadge       @"msgUpdageSegBadge"
+
+#define _app                    (AppDelegate *)[UIApplication sharedApplication].delegate
+
+#define SetSegBadge(i, n)       PostMessage(msgUpdageSegBadge, [NSNumber numberWithInt: i * 100 + n]);
+
+#define CareMsg(x)              [self bindMsg:x by:self]
+#define RegisterMsg(x,y)        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(y:) name:x object:nil]
+#define RemoveMsg(x)            [[NSNotificationCenter defaultCenter] removeObserver:self name:x object:nil]
+#define PostMessage(n,obj)      [[NSNotificationCenter defaultCenter] postNotificationName:n object:obj]
+
+#define RegisterMsg(x,y)        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(y:) name:x object:nil]
+
+#define Go2View(x)          x *sendView = [[x alloc] init];\
+[sendView setHidesBottomBarWhenPushed:YES];\
+[self.navigationController pushViewController:sendView animated:YES]
+
+#define SetCellBadge(x)     do\
+{\
+cell.labelBadge.backgroundColor = [UIColor clearColor];\
+cell.labelBadge.layer.backgroundColor = [UIColor redColor].CGColor;\
+if(x > 0)\
+{\
+cell.labelBadge.layer.zPosition = 1000;\
+[cell.labelBadge setText:[NSString stringWithFormat:@"%d", x]];\
+cell.labelBadge.layer.cornerRadius = 6.0;\
+cell.labelBadge.layer.masksToBounds = YES;\
+[cell.labelBadge setHidden:NO];\
+}\
+else\
+{\
+[cell.labelBadge setText:@""];\
+[cell.labelBadge setHidden:YES];\
+}\
+}while(0)
+
+#define roundIt(x)              [[x layer] setMasksToBounds:YES]; [[x layer] setCornerRadius:5.0]
+#define roundcycle(x)           [[x layer] setMasksToBounds:YES]; [[x layer] setCornerRadius:x.frame.size.height / 2.0]
+#define rounds(x)               [[x layer] setMasksToBounds:YES]; [[x layer] setCornerRadius:x.frame.size.height / 2.0 - 2]
+#define roundMe(x,y)            [[x layer] setMasksToBounds:YES]; [[x layer] setCornerRadius:y]
+
+#define isNullData(x)           ([x isKindOfClass:[NSNull class]] || x == nil || [x length] == 0)
+
+#define notPubChat              -10000
+
+//#define MAINCOLOR           [UIColor colorWithRed:121/255.0 green:128/255.0 blue:251/255.0 alpha:1]
+#define MAINCOLOR           [UIColor colorWithRed:143/255.0 green:195/255.0 blue:31/255.0 alpha:1]
+#define MAINDARKCOLOR       [UIColor colorWithRed:110/255.0 green:195/255.0 blue:18/255.0 alpha:1]
+#define MAINDEEPCOLOR       [UIColor colorWithRed:88/255.0 green:169/255.0 blue:67/255.0 alpha:1]
+
+//FMDB
+#define FMDBQuickCheck(SomeBool) { if (!(SomeBool)) { NSLog(@"Failure on line %d", __LINE__); abort(); } }
+#define DATABASE_PATH     [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]stringByAppendingString:[NSString stringWithFormat:@"/HSEduApp_%@.db", [HSAppData getAccount]]]
+#define ACCOUNTDATABASE_PATH     [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]stringByAppendingString:@"/HSEduApp_ACCOUNT.db"]
+#define kAlert(string) [[[UIAlertView alloc]initWithTitle:@"温馨提示" message:string delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil] show]
+
+
+#define LOGIN       1
+#define IM          2
+
+#define glState                 [MasterState sharedInstance]
+#define _Master                 [Master sharedInstance]
+//#define _app                    (AppDelegate *)[UIApplication sharedApplication].delegate
+#define _HSCore                 [HSCoreData sharedInstance]
+#define _HSData                 [HSDataStore sharedInstance]
+
+
+#define SafeRelease(x)  { if(x != nil) { [x release]; x = nil; }}
+
+#define DB_OLDDATA      "oldData"
+#define DB_OLDLOGO      "oldLogo"
+#define DB_NUMBER       "DDNumber"
+#define DB_NICKNAME     "nickName"
+#define DB_SIGN         "signText"
+#define DB_EMAIL        "EmailAddr"
+#define DB_MOBILE       "MobileNo"
+#define DB_DATAFLAG     "dataFlag"
+#define DB_LOGO         "logo"
+
+#define hsNotificationAppInitOK         @"appInitOK"
+#define hsNotificationChangeTabIndex    @"chagemaintabindex"
+#define hsNotificationSelfDataReceived  @"selfDataReceived"
+#define hsNotificationReloadFList       @"reloadFList"
+#define hsNotificationReloadGList       @"reloadGList"
+#define hsNotificationUpdateFListUser   @"updateUserInFList"
+#define hsNotificationUpdateGListUser   @"updateUserInGList"
+#define hsNotificationNewURL            @"loadNewURL"
+#define hsNotificationNewMsg            @"newChatMsg"
+#define hsNotificationSearchFriendRet   @"searchFriendRet"
+#define hsNotificationAddFriendRet      @"addFriendRet"
+#define hsNotificationUnread            @"RefreshUnread"
+#define hsNotificationUserReceived      @"userDataReceived"
+#define hsNotificationUserUpdateOK      @"userUpdateOK"
+#define hsNotificationMsgBadge          @"msgBadge"
+#define hsNotificationEnterSelfConfig   @"enterSelfConfig"
+#define hsNotificationServiceDataItem   @"serviceDataListArr"
+#define hsNotificationNeedShowDetail    @"pleaseShowTheUserDetail"
+#define hsNotificationMsgUpdateChatList @"myMessageNeedUpdate"
+#define hsNotificationWifiDisconnect    @"wifidisconnect"
+#define hsNotificationWifiConnect       @"wifioking"
+#define hsNotificationNetworkXX         @"noNetwork"
+#define hsNotificationNetworkOK         @"networkOK"
+#define hsAbsentResponse                @"responseForAbsent"
+#define hsNotificationLogoutRes         @"hsNotificationLogoutRes"
+
+#define msgDataNeedRefresh              @"msgDataNeedRefresh"
+
+#define msgBack2Login                   @"msgBack2Login"
+
+#define msgTest                         @"msgTesg"
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Master/NSByte.h"
+#import "Master/NSWord.h"
+#import "Master/Master.h"
+#import "Master/MasterURL.h"
+#import "Master/MasterUtils.h"
+#import "Master/MasterState.h"
+#import "Data/HSDataStore.h"
+#import "Data/HSCoreData.h"
+#import "Data/HSAppData.h"
+#import "HSSocket.h"
+#import "library/FMDB/FMResultSet.h"
+#import "library/TWMessage/TWMessageBarManager.h"
+#import "AFNetworking.h"
+#import "JsonObject.h"
+#import "NSString+PAUtility.h"
+#import "MJExtension.h"
+#import "UIColor+Parser.h"
+#import "MHConstant.h"
+#import "MXWechatConfig.h"
+#import "IMnetMethod.h"
+#import "UIView+PABankExtension.h"
+#endif
+
+
+#endif /* hsimapp_pch */
